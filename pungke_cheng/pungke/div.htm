@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="common/css/master.css" media="all" type="text/css" />
+<link rel="stylesheet" href="common/css/colorbox.css" media="all" type="text/css" />
+<script src="common/javascript/jquery.min.js" type="text/javascript"></script>
+<script src="common/javascript/jquery-ui.min.js" type="text/javascript"></script>
+<title>PAGE</title>
+</head>
+
+
+
+
+
+
+
+
+<div class="right_column form_sidebar all_plans light">
+	<h2 class="info">Setup your account:</h2>
+	<form onsubmit="return validate()" name="register_form" action="https://www.box.net/signup" method="post">
+		<ul class="field_set">
+
+			<li>
+				<label for="first_name">First Name:</label>
+				<input type="text" value="" name="first_name" id="first_name">
+			</li>
+			<li>
+				<label for="last_name">Last Name:</label>
+				<input type="text" value="" name="last_name" id="last_name">
+			</li>
+			<li class="hide_row" id="business_name_row">
+								<label for="business_name"><span title="Business Name|This will serve as a Custom URL for your account." class="sales_sprite_16x16 sales_sprite_16x16_more_info"></span>Username:</label>
+				<input type="text" value="" name="username" id="business_name">
+			</li>
+			<li>
+								<label for="email"><span title="Email|Your email address will be your username when logging in to Box" class="sales_sprite_16x16 sales_sprite_16x16_more_info"></span>Email:</label>
+				<input type="text" maxlength="100" value="" name="email" id="email">
+			</li>
+			<li>
+								<label for="new_password"><span title="Password|Please create a private password of at least 6 characters you will use to log into Box" class="sales_sprite_16x16 sales_sprite_16x16_more_info"></span>Password:</label>
+				<input type="password" autocomplete="off" value="" name="password_r" class="password" id="new_password">
+			</li>
+
+			<li>
+				<label for="confirm_password">Confirm&nbsp;Password:</label>
+				<input type="password" autocomplete="off" value="" name="confirm_password" class="confirm_password" id="confirm_password">
+			</li>
+			<li>
+				<label for="phone">Your Phone:</label>
+				<input type="text" value="" name="phone" id="phone">
+			</li>
+		
+			<li class="hide_row" id="personal_legal">
+				<label class="radio_input"><input type="checkbox" checked="checked" id="non_commercial"></label>
+				<label for="non_commercial" class="radio_label">I agree this is for non-commercial use only.</label>
+			</li>
+
+			<li>
+				<label>&nbsp;</label>
+												<button onclick="if(validate())document.forms['register_form'].submit(); return false;" class="sales_button green_button_medium" id="continue">											Continue									</button>
+			</li>
+			<li>
+				<a onclick="return Common_Global.new_win('https://www.box.net/static/html/' + signup_terms_page);" href="https://www.box.net/static/html/' + signup_terms_page" class="legal grey_link" id="signup_terms_link">By registering you agree to Box.net's Terms of Service</a>			</li>
+		</ul> 
+  <!-- End of signup form fieldset -->
+		<input type="hidden" value="" name="plan_group">
+		<input type="hidden" value="" name="no_lite">
+		<input type="hidden" value="1" name="page_step">
+		<input type="hidden" value="1" name="reg_step">
+		<input type="hidden" value="" name="elqCustomerGUID">
+		<input type="hidden" value="0" name="elqCookieWrite">
+		<input type="hidden" value="1" name="submit1">
+		<input type="submit" onclick="if(validate())document.forms['register_form'].submit();return false;" style="position: absolute; left: -10000px; width: 20px;">
+	<input type="hidden" style="display: none;" name="request_token" value="4fe6926566660503a0f4497d2df1a9f8"></form> <!-- End of signup form -->
+</div>
+
+</html>

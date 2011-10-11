@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="common/css/master.css" media="all" type="text/css" />
+<link rel="stylesheet" href="common/css/colorbox.css" media="all" type="text/css" />
+<script src="common/javascript/jquery.min.js" type="text/javascript"></script>
+<script src="common/javascript/jquery-ui.min.js" type="text/javascript"></script>
+<title>PAGE</title>
+</head>
+<body>
+ 
+	<div id="header"></div><!-- header-->
+	
+	<div id="container">
+		<div id="left_col">
+			<div id="search-page-activity">
+				<img src="images/profile_img_sample.png" />
+				<p>page participants</p>
+			</div>
+		</div><!-- end of left col-->
+		<div id="main-col">
+			<div id="tabs">
+				<ul id="tabsection">
+					<li><a href="#tabs-1">All Pages</a><span class="ui-icon-close">X</span></li>
+					<li><a href="#tabs-2">All Activities</a><span class="ui-icon-close">X</span></li>
+				</ul>
+			<div id="tabs-1">
+				<div id="action-over-all">
+				<span class="create-new-page"><a class="popup-new-page" href="new-page.htm">Create New Page</a></span><span class="import-excel"><a href="#">Import from Excel</a></span>
+				</div>
+				<div id="allpages-dofilter">
+					<span></span>
+					<span></span>
+					Filter by Page Type<span></span>
+					by Author<span></span>
+					by Status<span></span>
+					by Priority<span></span>
+				</div>
+			<table id="allpages" width="890px">
+				<thead>
+					<tr>
+						<th>Page Name</th>
+						<th>Last Event</th>
+						<th>Page Type</th>
+						<th>Author</th>
+						<th>Status</th>
+						<th>Priority</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>						
+						<td>	
+						<input type="checkbox" />				
+						<div class="page">page 1<div><span class="action-delete"></span><span class="export-excel"></span><span class="action-participant"></span><span class="action-edit"></span><span class="action-add-ac"></span><span class="action-expand" name="page001"></span></div></div>
+						<div class="archivebox" id="ab-page001">Archive This Page | Archive all selected Pages</div>
+						<div style="display:none" class="page-activity" id="page001">
+							<div class="expanded-ac">AC 1<span class="action-priority"></span><span class="action-edit"></span><span class="action-disconnect"></span><span class="action-connect"></span><span class="action-open" id="add_tab"></span></div>
+							<div class="expanded-ac">AC 2</div>
+							<div class="expanded-ac">AC 3</div>
+						</div>
+						</td>
+						<td>last event page</td>
+						<td>Generic</td>
+						<td>Summer</td>
+						<td>Live</td>
+						<td>Low</td>
+					</tr>
+					<tr class="high-priority">
+						<td>
+						<input type="checkbox" />
+						<div class="page">page 2 <span class="action-delete"></span><span class="export-excel"></span><span class="action-participant"></span><span class="action-edit"></span><span class="action-add-ac"></span><span class="action-expand" name="page002"></span></div>
+						<div style="display:none" class="page-activity" id="page002">
+							<p>no activity yet</p>
+							<p><a href="#">Create New Activity Now</a></p>
+						</div>
+						</td>
+						<td>FAQ added</td>
+						<td>Part</td>
+						<td>Jimmy</td>
+						<td>Live</td>
+						<td>High</td>
+					</tr>
+					<tr class="high-priority">
+						<td>
+						<input type="checkbox" />
+						<div class="page">page 3 <span class="action-delete"></span><span class="export-excel"></span><span class="action-participant"></span><span class="action-edit"></span><span class="action-add-ac"></span><span class="action-expand" name="page003"></span></div>
+						<div style="display:none" class="page-activity" id="page003">
+							<p>page 3 has no activity yet</p>
+						</div>
+						</td>
+						<td>New activity</td>
+						<td>PowerPoint</td>
+						<td>Jack</td>
+						<td>Archive</td>
+						<td>High</td>
+					</tr>
+					<tr>
+						<td>
+						<input type="checkbox" />
+						<div class="page">page 4 <span class="action-delete"></span><span class="export-excel"></span><span class="action-participant"></span><span class="action-edit"></span><span class="action-add-ac"></span><span class="action-expand" name="page004"></span></div>
+						<div style="display:none" class="page-activity" id="page004">
+							<p>page 4 has no activity yet</p>
+						</div>
+						</td>
+						<td>submitted</td>
+						<td>Product</td>
+						<td>Summer</td>
+						<td>On Hold</td>
+						<td>Low</td>
+					</tr>
+					<tr>
+						<td>
+						<input type="checkbox" />
+						<div class="page">page 5 <span class="action-delete"></span><span class="export-excel"></span><span class="action-participant"></span><span class="action-edit"></span><span class="action-add-ac"></span><span class="action-expand" name="page005"></span></div>
+						<div style="display:none" class="page-activity" id="page005">
+							<p>page 5 has no activity yet</p>
+						</div>
+						</td>
+						<td>event</td>
+						<td>SolidWorks</td>
+						<td>Jimmy</td>
+						<td>Archive</td>
+						<td>Low</td>
+					</tr>
+					<tr>
+						<td>
+						<input type="checkbox" />
+						<div class="page">page 6 Search through 308215 free icons in 2313 icon packs<div><span class="action-delete"></span><span class="export-excel"></span><span class="action-participant"></span><span class="action-edit"></span><span class="action-add-ac"></span><span class="action-expand" name="page006"></span></div></div>
+						<div style="display:none" class="page-activity" id="page006">
+							<p>page 6 has no activity yet</p>
+						</div>
+						</td>
+						<td>Event</td>
+						<td>Word</td>
+						<td>Jack</td>
+						<td>Live</td>
+						<td>Low</td>
+					</tr>
+				<tfoot>
+					<td colspan="6"><input type="checkbox"/> 全/反选　expand / archive / delete / export excel</td>
+				</tfoot>
+				</tbody>
+			</table>
+		</div><!--end of tab1-->
+		<div id="tabs-2">
+			<div id="action-over-all">
+				<span class="create-new-ac"><a class="popup-new-ac" href="new-ac.htm">Create New Activity</a></span><span class="import-excel"><a href="#">Import from Excel</a></span><span class="export-excel"><a href="#">Export Excel</a></span>
+			</div>
+			<div class="moreoption">
+				more options: <a onclick="fnShowHideAC(6);" href="javascript:void(0);">show/hide Access</a> <a onclick="fnShowHideAC(7);" href="javascript:void(0);">show/hide Summary</a>
+			</div>
+			<div id="allac-dofilter">
+					<span></span>
+					<span></span>
+					<span></span>
+					by Author <span></span>
+					by Priority <span></span>
+					by Type <span></span>
+					<span></span>
+					<span></span>
+				</div>
+			<table id="allac" width="890px">
+				<thead>
+				<tr>
+					<th>Title</th>
+					<th>Due Date</th>
+					<th>Last Updated</th>
+					<th>Author</th>
+					<th>Priority</th>
+					<th>Type</th>
+					<th>Access</th>
+					<th>Summary</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="activity">AC 1 <span><input name="ab-ac001" type="checkbox" /></span><span>edit</span><span>copy</span><span class="connectbox" name="c2-ac001">Connect to</span><span class="disconnectbox" name="dc2-ac001">Disconnected from</span>
+					<div class="archivebox" id="ab-ac001">Archive This AC | Archive all selected AC</div>
+					<div class="connect2" id="c2-ac001">page 1<br/>Page 2<br/>page 3<br/>page 4<br/><span class="connect2-close">X</span></div>
+					<div class="disconnect2" id="dc2-ac001">page 15<br/><span class="disconnect2-close">X</span></div>
+					</td>
+					<td>8-26</td>
+					<td>8-23</td>
+					<td>Summer</td>
+					<td>High</td>
+					<td>Word</td>
+					<td>Public</td>
+					<td>not sure</td>
+				</tr>
+				<tr>
+					<td class="activity">AC 2<span><input name="ab-ac002" type="checkbox" /></span><span>edit</span><span>copy</span><span>Connect to</span><span>Disconnected from</span>
+					<div class="archivebox" id="ab-ac002">Archive This AC | Archive all selected AC</div>
+					</td>
+					<td>7-26</td>
+					<td>7-23</td>
+					<td>Tom</td>
+					<td>Low</td>
+					<td>Word</td>
+					<td>Public</td>
+					<td>not sure</td>
+				</tr>
+				</tbody>
+			</table>
+		</div><!-- end of tab2-->
+		</div><!-- end of tab-->
+		</div><!--end of maincol-->
+		
+	</div><!-- end of container -->
+	
+	
+	
+	<div id="footer"></div> <!-- footer -->
+	
+<div id="temp" style="display:none"><iframe style="width:890px; height:900px; border:none;" src="edit-activity.htm"></iframe></div>
+	<script src="common/javascript/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="common/javascript/jquery.colorbox-min.js" type="text/javascript"></script>
+	
+<script>
+	jQuery(document).ready(function() {
+		$("#header").load("header.htm");
+		$("#footer").load("footer.htm");
+		$(".popup-new-page").colorbox({iframe:true, innerWidth:400, innerHeight:344});
+		$(".popup-new-ac").colorbox({iframe:true, innerWidth:400, innerHeight:344});
+		});
+</script>
+<script src="common/javascript/pages.js" type="text/javascript"></script>
+<script src="common/javascript/function.js" type="text/javascript"></script>
+
+</body>
+</html>

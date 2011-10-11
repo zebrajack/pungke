@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>User</title>
+</head>
+<body>
+<script src="common/javascript/jquery.min.js" type="text/javascript"></script>
+<script src="common/javascript/jquery-ui.min.js" type="text/javascript"></script>
+	<div>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<input type="button" value="Click me" onclick="process()" />
+		<div id="divmessage"/>
+	</div>
+
+<script type="text/javascript">
+	function process()
+	{
+		alert("enter");
+		$.getJSON("/pungke/user",function(data)
+		{
+			alert("getJSON");
+			var tt="";
+			$.each(data, function(k, v)
+			{
+				tt += k + "：" + v + "<br/>";
+			});
+			alert(tt);
+			$("#divmessage").html(tt);
+		});
+	}
+</script>
+
+</body>
+
+</html>

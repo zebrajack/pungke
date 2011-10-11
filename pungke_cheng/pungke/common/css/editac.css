@@ -1,0 +1,25 @@
+body {	font-family: Verdana, Geneva, Arial; 
+	font-size: 12px; 
+	color:#333;}
+	
+h1 { font-size: 20px; font-weight:700;}
+
+#add-reply-jHtmlArea { display:none;}
+#add-reply-jHtmlArea input {float:left; margin:10px 15px 15px 0;}
+#submit-but { float:left; width:890px;}
+#edit-ac-action {float:left; width: 890px; clear:both; margin-bottom:10px;}
+#edit-ac-action span { float:left; margin-right:25px; padding-left:20px; line-height:19px; color:#357ba8; cursor:pointer;}
+span.action-edit {background: url(../../images/icons.png) 0 -175px no-repeat;}
+span.action-participant {background: url(../../images/icons.png) 0 -230px no-repeat;}
+span.action-add-ac {background: url(../../images/icons.png) 0 -89px no-repeat;}
+span.action-delete {background: url(../../images/icons.png) 0 -205px no-repeat;}
+span.action-checkbox {filter:alpha(opacity=100);opacity:1;}
+span.action-priority {background: url(../../images/icons.png) 0 -357px no-repeat;}
+span.action-disconnect {background: url(../../images/icons.png) 0 -313px no-repeat;}
+span.action-connect {background: url(../../images/icons.png) 0 -289px no-repeat;}
+span.action-open {background: url(../../images/icons.png) 0 -409px no-repeat;}
+
+#edit-ac-main { float:left; width:890px; margin:15px 0; border:1px solid #ccc;}
+#edit-ac-header { float:left; border-bottom: 1px solid #ccc; padding-bottom: 10px; padding:10px; width:870px;background-color:#efefef;}
+#edit-ac-header span { float:left; margin-right:20px;}
+#edit-ac-content {float:left; padding:10px;}

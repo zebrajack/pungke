@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="common/css/master.css" media="all" type="text/css" />
+<script src="common/javascript/jquery.min.js" type="text/javascript"></script>
+<script src="common/javascript/jquery-ui.min.js" type="text/javascript"></script>
+<title>PAGE</title>
+</head>
+<body>
+ 
+	<div id="header">
+		<div id="header-container">
+			<div id="logo">
+				<a href="index.htm"><span>碰客－Pungke</span></a>
+			</div>
+		</div>
+	</div><!-- header-->
+	
+	<div id="container">
+		
+	<div id="login-intro">
+		<h1>Place hold </h1>
+		
+	</div>
+	
+<div class="right_column form_sidebar all_plans light">
+	<h2 class="info">&nbsp;</h2>
+	<h2 class="info">&nbsp;</h2>
+	<h2 class="info">&nbsp;</h2>
+	<h2 class="info">&nbsp;</h2>
+	<h2 class="info">Setup your account:</h2>
+	<p class="info">&nbsp;</p>
+	<form onsubmit="return validate()" name="register_form" action="https://www.box.net/signup" method="post">
+		<div class="field_set">
+
+		  <div>
+				<label for="first_name">First Name:</label>
+			 
+				  <p>
+				    <input type="text" value="" name="first_name" id="first_name">
+		    </p>
+		    </div>
+			<div></div>
+		  <div>
+				<label for="last_name">Last Name:</label>
+			  <p>
+				  <input type="text" value="" name="last_name" id="last_name">
+		        </p>
+			</div>
+			<div></div>
+          <div>
+			    <label for="Username">Username:</label>
+			  <p>
+				  <input type="text" value="" name="username" id="business_name">
+		        </p>
+            </div>
+			
+			<div>
+				<label for="email"> Email:</label>
+				<p>
+				  <input type="text" maxlength="100" value="" name="email" id="email">
+			      </p>
+			</div>
+			<div></div>
+			<div>
+				<label for="new_password">Password:<br />
+				</label>
+				<input type="password" autocomplete="off" value="" name="password_r" class="password" id="new_password">
+			</div>
+
+			<div></div>
+			<div>
+				<label for="confirm_password">Confirm&nbsp;Password:<br />
+				</label>
+				<input type="password" autocomplete="off" value="" name="confirm_password" class="confirm_password" id="confirm_password">
+			</div>
+		
+			<div>
+				<label for="phone">Your Title:</label>
+				<p>
+				  <input type="text" value="" name="phone" id="phone">
+	            </p>
+			</div>
+		
+			
+			<div class="hide_row" id="personal_legal">
+				<label class="radio_input"><input type="checkbox" checked="checked" id="non_commercial"></label>
+				<label for="non_commercial" class="radio_label">I agree this is for non-commercial use only.</label>
+			</div>
+
+			<div>
+				<label>&nbsp;</label>
+												<button onclick="if(validate())document.forms['register_form'].submit(); return false;" class="sales_button green_button_medium" id="continue">											Continue									</button>
+			</div>
+		</div> 
+  </form> 
+	<!-- End of signup form -->
+</div>
+	
+	</div>
+<div id="footer"></div> <!-- footer -->
+<script>
+   //    $('#login-form').css("background","#bbffaa");	
+	jQuery(document).ready(function() {
+		$("#footer").load("footer.htm");
+		});
+</script>
+</body>
+</html>

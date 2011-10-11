@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="common/css/master.css" media="all" type="text/css" />
+<title>PAGE</title>
+</head>
+<body>
+	<div id="header">
+		<div id="header-container">
+		<div id="logo">
+			<a href="index.htm"><span>碰客－Pungke</span></a>
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="page.htm">WorkSpace</a></li>
+				<li><a href="#">App</a></li>
+				<li><a href="#">My Account</a></li>
+			</ul>
+		</div>
+		<div id="language">
+			<a href="#">中文</a>
+		</div>
+		<div id="search">
+			<input class="search_box" type="text" value="Search Pungke" />
+		</div>
+		</div>
+	</div><!-- end of header-->
+	
+	<div id="container">
+		<div id="left_col">
+			<div id="search-page-activity">
+				Search for <select><option>Both page & activity</option> <option>Page only</option> <option>Activity only</option></select>
+				Status <select><option>Live</option><option>Archive</option></select>
+				Keywords <input type="text"/>
+				<input type="submit" value="Submit" />
+			</div>
+		</div><!-- end of left col-->
+		<div id="main-col">
+			<h1>WorkSpace</h1>
+			<table class="display-page-activity" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="display-icon display-head">&nbsp;</td>
+						<td class="display-title display-head">Page name</td>
+						<td class="display-type display-head">Page Type</td>
+						<td class="display-status display-head">Author</td>
+						<td class="display-owner display-head">Status</td>
+					
+					</tr>
+					<tr class="accordion">
+						<td><img src="images/page.png" width="10" height="13" /></td>
+						<td>Default Page</td>
+						<td>FAQ</td>
+						<td>Archive</td>
+						<td>Summer</td>
+						<td>4:59pm on Jun 10, 2011</td>
+					</tr>
+					<tr class="shortcut">
+						
+					</tr>
+					<tr class="accordion">
+						<td><img src="images/tie.png" /></td>
+						<td>Activity 1</td>
+						<td>FAQ</td>
+						<td>Archive</td>
+						<td>Summer</td>
+						<td>4:59pm on Jun 10, 2011</td>
+					</tr>
+					<tr class="shortcut">
+						<td colspan="6">Short Cut</td>
+					</tr>
+					<tr class="accordion">
+						<td><img src="images/tie.png" /></td>
+						<td>Activity 2</td>
+						<td>FAQ</td>
+						<td>Archive</td>
+						<td>Summer</td>
+						<td>4:59pm on Jun 10, 2011</td>
+					</tr>
+					<tr class="shortcut">
+						<td colspan="6">Short Cut</td>
+					</tr>
+					<tr class="accordion">
+						<td><img src="images/activity.png" /></td>
+						<td>Default Activity</td>
+						<td>FAQ</td>
+						<td>Archive</td>
+						<td>Summer</td>
+						<td>4:59pm on Jun 10, 2011</td>
+					</tr>
+					<tr class="shortcut">
+						<td colspan="6">Short Cut</td>
+					</tr>
+				</table>			
+
+		</div>
+	</div><!-- end of container -->
+	
+	<div id="footer">
+		<div id="footer-container">
+		Pungke 2011 
+		</div>
+	</div>
+	<script src="common/javascript/jquery.min.js" type="text/javascript"></script>
+	<script src="common/javascript/jquery-ui.min.js" type="text/javascript"></script>
+	<script>
+		jQuery(document).ready(function(){
+	$('.accordion').click(function() {
+		$(this).next().toggle();
+		return false;
+	}).next().hide();
+});
+	</script>
+
+</body>
+</html>

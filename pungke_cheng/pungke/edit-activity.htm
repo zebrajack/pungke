@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ac</title>
+	<script src="common/javascript/jquery.min.js" type="text/javascript"></script>
+	<script src="common/javascript/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="common/javascript/jHtmlArea-0.7.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="common/css/jHtmlArea.css" media="all" type="text/css" />
+	<link rel="stylesheet" href="common/css/editac.css" media="all" type="text/css" /> 
+</head>
+<body>
+	<h1>H1 - title</h1>
+			<h2>Notes: Created by Summer</h2>
+			<div id="edit-ac-action">
+				<span id="add-reply" name="edit-add-reply">Add Reply</span><span class="action-edit">Edit</span><span class="action-participant">Edit participants</span><span>Archive</span><span class="action-connect">Connect to</span><span>Summery</span>
+			</div>
+<div id="add-reply-jHtmlArea">
+	<textarea id="editor" style="width:890px; height:150px;"><p>add reply</p></textarea>
+	<div id="submit-but"><input  value="submit" type="button"/>	<input  value="cancel" type="button"/></div>
+</div>
+	
+			<div id="edit-ac-main">
+				<div id="edit-ac-header">
+					<span><input type="checkbox" />Include events</span> 
+					<span>Access<select><option>Privtate</option><option>Team</option></select></span>
+					<span>Type<select><option>FAQ</option><option>Issue</option><option>Task</option></select></span>
+					<span>Priority<select><option>high</option><option>low</option><option>on hold</option></select></span>
+					<span>Owner: Summer</span>
+				</div>
+				<div id="edit-ac-content">bla bla</div>
+	</div>
+</body>
+<script type="text/javascript">
+	  $(function() {
+$("#editor").htmlarea();
+});
+	//add reply
+		$("#add-reply").click(function(){
+		$("#add-reply-jHtmlArea").toggle();
+	});
+	
+</script>
+
+</body>
+</html>
